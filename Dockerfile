@@ -1,6 +1,7 @@
 FROM debian:wheezy
 
-ENV SITENAME=website
+#ENV SITENAME=website
+ENV SITENAME website
 
 ADD build.sh /
 ADD run.sh /
