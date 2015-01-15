@@ -15,7 +15,7 @@ harp compile ${SRC_DIR} ${TMP_DIR}
 fpm --force -s dir -t deb -n $SITENAME \
   -v $VERSION \
   --exclude "**/.git/**" \
-  -a all ./${TMP_DIR}
+  -a all ${TMP_DIR}
 
 mkdir -p ${SRC_DIR}/build
 
